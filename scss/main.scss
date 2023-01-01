@@ -1,0 +1,36 @@
+@import 'variables';
+@import 'header';
+@import 'secondSection';
+@import 'thirdSection';
+@import 'fourthSection';
+@import 'fifthSection';
+@import 'sixthSection';
+@import 'seventhSection';
+
+
+
+body {
+    font-family: $font-open-sans;
+}
+
+.container{
+    width: 1352px;
+    margin: 0 auto;
+    @media(max-width: 1352px) {
+        
+            width: 100%;
+            padding: 15px 15px;
+
+    }
+}
+
+
+
+$baseWidth : calc(100%/12);
+@for $i from 1 through 12{
+    .col-#{$i}{
+       width: $baseWidth*$i;
+    }
+}
+
+

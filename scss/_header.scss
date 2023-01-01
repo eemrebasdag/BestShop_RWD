@@ -1,0 +1,148 @@
+body {
+    font-family: "Open Sans", sans-serif;
+}
+
+.container {
+    width: 1352px;
+    margin: 0 auto;
+}
+
+@media(max-width: 1352px) {
+    .container {
+        width: 100%;
+        padding: 0 15px;
+    }
+}
+
+.header {
+    height: 10%;
+    border-bottom: 2px solid $color-light-grey;
+    box-shadow: 10px 0 20px $color-grey;
+}
+
+.header__container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 100%;
+    width: 90%;
+    margin: 0 auto;
+    @media (min-width:792px) {
+        width: 80%;
+    }
+    
+}
+
+.nav__element {
+    padding: 0 26px;
+}
+
+.nav__element:last-child {
+    padding-right: 0;
+}
+
+.nav__link {
+    color: #a5a5a5;
+    font-weight: 700;
+    font-size: .6875rem;
+    text-transform: uppercase;
+    padding: 28px 18px 22px;
+    border-bottom: 4px solid transparent;
+    letter-spacing: .1875rem;
+}
+
+.nav__link:hover {
+    color: #000;
+    border-color: #08a6e4;
+}
+
+.header__nav {
+    display: flex;
+}
+
+@media(max-width: 792px) {
+    .header__nav {
+        position: absolute;
+        left: 0;
+        top: 70px;
+        flex-direction: column;
+        background-color: #fff;
+        width: 100%;
+        padding-bottom: 20px;
+        display: none;
+    }
+}
+
+.nav__element {
+    padding: 0;
+}
+
+.nav__link {
+    display: block;
+    padding: 14px 20px;
+}
+
+
+.menu__btn {
+    display: none;
+    position: absolute;
+    top: -9999px;
+    left: -9999px;
+    opacity: 0;
+}
+
+@media(max-width: 792px) {
+    .header .menu__btn:checked~.header__nav {
+        display: flex;
+    }
+
+    .header .menu__btn:checked~.menu__toggle span:nth-child(1) {
+        transform: rotate(45deg) translate(2px, 5px);
+
+    }
+
+    .header .menu__btn:checked~.menu__toggle span:nth-child(2) {
+        opacity: 0;
+        transition: 0;
+    }
+
+    .header .menu__btn:checked~.menu__toggle span:nth-child(3) {
+        transform: rotate(-45deg) translate(2px, -5px);
+
+    }
+}
+
+.menu__toggle {
+    display: none;
+}
+
+.menu__toggle span {
+    width: 20px;
+    height: 2px;
+    display: block;
+    margin-bottom: 3px;
+    background-color: #08a6e4;
+    transition: .3s all ease-in-out;
+}
+
+.menu__toggle span:last-child {
+    margin-bottom: 0;
+}
+
+@media (max-width: 792px) {
+    .menu__toggle {
+        display: block;
+        margin-right: 30px; 
+    }
+}
+
+.logo {
+    font-family: "Raleway", sans-serif;
+    font-size: 2rem;
+    font-weight: 300;
+    color: #08a6e4;
+}
+
+a {
+    text-decoration: none;
+}

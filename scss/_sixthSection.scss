@@ -1,0 +1,191 @@
+
+.contact{
+    margin: 0 auto;
+    height: 100vh;
+    background-color: $color-white;
+    margin-top: 140vh;
+    width: 80%;
+    @media (min-width:792px) {
+        padding: 0;
+        align-items: center;
+        height: 65vh;     
+        margin-top: 60vh;
+        margin-bottom: 10vh;
+    }
+}
+
+.contact-container{
+    display: flex;
+    height: 70%;
+    flex-direction: column;
+    scale: 1;
+    @media (min-width:792px) {
+        margin-top: 0;
+        flex-direction: row;
+        align-items: flex-start;
+        justify-content: space-around;
+    }
+}
+
+.contact-info{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    width: 90%;
+
+    @media (min-width:792px) {
+        width: 40%;
+        align-items: center;
+    }
+
+    h1{
+        font-family: $font-raleway;
+        font-size: $font-size-h2;
+        margin-bottom: 20px;
+    }
+
+    h1 + p{
+        font-family: $font-open-sans;
+        font-size: $font-size-p;
+        font-weight: $font-weight-p;
+        margin-bottom: 50px;
+    }
+    
+}
+
+
+
+.mail{
+    display: flex;
+    align-items: center;
+}
+
+.mail img, .phone img{
+    padding-right: 10px;
+}
+
+.mail p, .phone p{
+    color:$color-grey
+}
+
+
+.phone{
+    display: flex;
+    align-items: center;
+    @media (min-width:792px) {
+        padding-left: 20px;
+    }
+}
+
+.info{
+    display: flex;
+    flex-direction: column;
+    align-self: flex-start;
+    justify-content: center;
+    margin-bottom: 50px;
+
+    @media (min-width:792px) {
+        flex-direction: row;
+        align-self: unset;
+        justify-content: unset;
+        margin-bottom: 0;
+    }
+}
+
+.form{
+    width: 90%;
+    @media (min-width:792px) {
+        width: 50%;
+        position: relative;
+    }
+}
+
+
+
+.contact-form tr td{
+    padding: 10px 0;
+}
+
+.contact-name,
+.contact-email{
+    text-transform: uppercase;
+    color:$color-primary;
+    font-size:15px;
+    font-weight:bold;
+    letter-spacing: 3px;
+}
+
+.contact-form tr input[type="text"],
+.contact-form tr input[type="email"]{
+    width: 400px;
+    height: 30px;
+    border: none;
+    border-bottom: 2px solid $color-grey;
+    margin-bottom: 40px;
+
+    @media (min-width:792px) {
+        width: 500px;
+    }
+}
+
+.contact-form tr input[type="text"]:focus,
+.contact-form tr input[type="email"]:focus{
+    background-color: whitesmoke;
+
+}
+
+.checkbox input[type="checkbox"]{
+    position: absolute;
+    opacity: 0;
+    cursor: pointer;
+    height: 0;
+    width: 0;
+}
+
+.checkbox{
+    cursor: pointer;
+    display: flex;
+    margin-top: 30px;
+    color: $color-grey;
+    width: 70%;
+
+    span{
+        height: 25px;
+        flex-shrink: 0;
+        flex-basis: 25px;
+        border: 1px solid $color-grey;
+        border-radius: 5px;
+        cursor: pointer;
+        margin-right: 15px;
+    }
+}
+
+
+.checkbox input:checked + span{
+    background-image: url(/images/Checkmark.svg);
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.form-end{
+    display: flex;
+    flex-direction: column;
+}
+.form-btn{
+    align-self: center;
+    margin-top: 20px;
+    background-color: $color-primary;
+    box-shadow: 0px 0px 20px $color-primary-shadow;
+    color: white;
+    font-weight: bold;
+    border: none;
+    padding: 20px 100px;
+    border-radius: 30px;
+
+}
+
+.form-btn:hover{
+    background-color: white;
+    color: $color-primary;
+    border: 1px solid $color-primary;
+}

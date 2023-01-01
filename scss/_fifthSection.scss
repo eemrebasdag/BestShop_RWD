@@ -1,0 +1,169 @@
+.pricing{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding:100px 0;
+    height: 40vh;
+    margin: 10vh 0;
+}
+
+.pricing h1{
+    font-family: $font-raleway;
+    font-size: $font-size-h2;
+    margin-bottom: 20px;
+}
+
+.cards{
+    margin-top: 50px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    @media (min-width:792px) {
+        flex-direction: row;
+    }
+}
+
+.card-items{
+    margin: 50px 50px;
+    width: 400px;
+    height: 40vh;
+    border-radius: 20px;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    @media (min-width:792px) {
+        margin: 0px 50px;
+        height: 60vh;
+        text-align: center;
+        border: 2px solid black;
+        padding: 30px 0;
+        border-radius: 20px;
+        position: relative;
+        display: block;
+        
+    }
+}
+
+.card-header{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-self: center;
+    margin-top: 50px;
+}
+
+.card-item-container{
+    margin-left: 50px;
+    @media (min-width:792px) {
+        margin-left: 0;
+    }
+}
+
+
+.cards-left{
+    border:1px solid $color-redish;
+}
+
+.cards-mid{
+    border:1px solid $color-primary;
+    box-shadow: 0px 0 30px $color-primary-shadow;
+    height: 50vh;
+    width: 480px;
+    @media (min-width:792px) {
+        height: 65vh;
+    }
+}
+
+.cards-right{
+    border:1px solid $color-green;
+}
+
+.card-items .card-header h1{
+    font-family: $font-raleway;
+    font-size: 25px;
+    font-weight: bold;
+    margin-bottom: 30px;
+}
+
+.offer{
+    height: 70px;
+    text-align: center;
+}
+
+.card-items .offer em{
+    font-weight: bold;
+    font-size: small;
+}
+
+
+.card-items .offer span{
+font-size: 50px;
+font-weight: 300;
+}
+
+.card-items .offer{
+    margin-bottom: 70px;
+}
+
+.card-items .text{
+    margin:30px 0;
+    font-weight: $font-weight-p;
+}
+
+.text{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+
+    @media (min-width:792px) {
+        justify-content: center;
+    }
+}
+
+.text img{
+    margin-right: 10px;
+}
+
+.cards-left .offer span{
+    color: $color-redish;
+}
+
+.cards-mid .offer span{
+    color: $color-primary;
+}
+
+.cards-right .offer span{
+    color: $color-green;
+}
+
+.card-items .btn-card{
+    padding: 20px 70px;
+    border-radius: 25px;
+    color: white;
+    font-weight: bold;
+    border: none;
+}
+
+.btn-left{
+    background-color: $color-redish;
+    position: absolute;
+    right: 110px;
+    bottom: -30px;
+}
+
+.btn-right{
+    background-color: $color-green;
+    position: absolute;
+    right: 110px;
+    bottom: -30px;
+}
+
+.btn-mid{
+    background-color: $color-primary;
+    position: absolute;
+    right: 150px;
+    bottom: -30px;
+}

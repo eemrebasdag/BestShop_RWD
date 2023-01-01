@@ -1,0 +1,91 @@
+.banner{
+    height: 90%;
+    background-color: $color-white;
+    background-image: url(/images/Background.png);
+    background-size: 220%;
+    background-repeat: no-repeat;
+    background-position: bottom;
+
+    @media(min-width: 792px) {
+        
+       background-size: auto;
+
+    }
+}
+
+.banner_container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    height: 60%;
+
+    @media(min-width: 792px) {
+        
+        flex-direction: row;
+        height: 47vh;
+ 
+     }
+}
+
+.banner_main{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color:$color-black;
+    line-height: 30px;
+
+    @media (min-width: 792px) {
+        line-height: 60px;
+    }
+
+    h1{
+        font-family: $font-raleway;
+        font-size: 3.0625rem;
+        font-weight: 400;
+        padding-bottom: 20px;
+
+        @media (min-width: 792px) {
+            padding-bottom: 0;
+        }
+
+    }
+
+    p{
+        font-size:large;
+        font-weight: $font-weight-p;
+        width: 70%;
+        padding-bottom: 30px;
+        
+        @media (min-width: 792px) {
+            font-size:medium;
+            width: auto;
+            padding-bottom: 0;
+        }
+    }
+}
+
+.btn_banner{
+    margin-top: 20px;
+    padding: 40px 140px;
+    box-shadow: 0px 0px 40px $color-primary-shadow;
+    background-color: $color-primary;
+    border-radius: 60px;
+    color: $color-white;
+    border:none;
+    transition: 0.2s;
+    font-weight: bold;
+    &:hover{
+
+        background-color: white;
+        color: $color-primary;
+
+    }
+
+    @media (min-width: 792px) {
+        padding: 20px 150px;
+        border-radius: 30px;
+    }
+
+}

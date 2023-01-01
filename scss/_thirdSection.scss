@@ -1,0 +1,126 @@
+
+.testimonial{
+    display: flex;
+    align-items: center;
+    height: 130%;
+    background-color: $color-white;
+
+    @media (min-width: 792px) {
+        height: 50vh;
+    }
+}
+
+.testimonial-container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    margin: 0 auto;
+    h2{
+        font-family: $font-raleway;
+        font-size: 40px;
+        margin-top: 150px;
+        padding: 0 80px;
+
+        @media (min-width: 792px) {
+            font-size: 35px;
+            margin: auto;
+            padding: auto;
+        }                                                                           
+    }
+
+    @media (min-width: 792px) {
+        width: 60%;
+    }
+    
+}
+
+
+.testimonial-items{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    margin-top: 10vh;
+
+    @media (min-width:792px){
+        flex-direction: row;
+    }
+    
+}
+
+.testimonial-item{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    height: 20vh;
+    scale: 1.5;
+    padding-bottom: 80px;
+
+    @media (min-width:792px){
+        width: 30%;
+        scale: 1;
+        padding-bottom: 0;
+    }
+
+    img{
+        position: absolute;
+    
+    }
+
+    &:nth-child(1) .circle{
+        background-color: $color-redish;
+    }
+
+    &:nth-child(1) .circle img{
+        left: 45%;
+    }
+
+    &:nth-child(2) .circle{
+        background-color: $color-primary;
+    }
+
+    &:nth-child(2) .circle img{
+        top:14px;
+        left: 45%;
+    }
+
+    &:nth-child(3) .circle{
+        background-color: $color-green;
+    }
+
+    &:nth-child(3) .circle img{
+        top:6px;
+        left: 45%;
+    }
+
+    h2{
+        margin-top: 10px;
+        font-family: $font-raleway;
+        font-weight: bold;
+        font-size: 20px;
+        letter-spacing: 3px;
+    }
+
+    p{  justify-content: start;
+        margin-bottom: 30px;
+        font-family: $font-raleway;
+        font-weight: $font-weight-p;
+        font-size: $font-size-p;
+        text-align: center;
+        color: $color-grey;
+    }
+}
+
+
+.circle{
+    border-radius: 50%;
+    width: 63px;
+    height: 63px;
+    position: relative;  
+}
+
+
+
